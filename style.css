@@ -1,0 +1,113 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar {
+  background-color: rgb(6, 41, 24);
+  font-weight: 800;
+  box-shadow: 1px 1px 1px 2px #312d2d67;
+  font-family: serif;
+}
+
+.intro1 {
+  background: url("/Assets/background.jpg");
+  background-size:100% 100%;
+  display: flex;
+  justify-content:end;
+  align-items: star;
+  flex-direction: column;
+  font-family: serif;
+}
+
+#btnIntro {
+    width: 8em;
+    border-radius: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgb(6, 41, 24);
+  position: relative;
+  border-radius: 50%;
+  bottom: 30px;
+  margin: auto;
+  transition: ease-in;
+  animation: bounce 1.5s infinite;
+}
+
+.arrow:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  width: 13px;
+  height: 13px;
+  border-left: 3px solid #000 ;
+  border-bottom: 3px solid #000 ;
+  transform:rotate(-45deg)
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0);
+  }  
+  20% {
+    transform: translateY(-15px);
+  }  
+  40% {
+    transform: translate(0);
+  }  
+} 
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translate(0);
+  }  
+  20% {
+    transform: translateY(-15px);
+  }  
+  40% {
+    transform: translate(0);
+  }  
+}
+
+.fade-in {
+  opacity: 1;
+  transition: 1s all ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: 1s all ease-out;
+}
+
+
+.card-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Card Hover */
+.inner {
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+    cursor: pointer;
+}
+
+.inner:hover img{
+    transform:scale(1.5)
+}
